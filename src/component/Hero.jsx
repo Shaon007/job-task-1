@@ -11,9 +11,9 @@ const Hero = () => {
       <a
         href="/nazirCV.pdf"
         download
-        className="btn bg-indigo-400 hover:scale-95 transition-transform duration-300 text-white w-fit underline"
+        className="btn bg-indigo-400 hover:scale-95 transition-transform duration-300 text-white w-fit underline "
       >
-        Download CV 
+        Download CV
       </a>
     </div>
 

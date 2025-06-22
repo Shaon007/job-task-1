@@ -48,12 +48,14 @@ const Works = () => {
             variants={cardVariants}
             className="relative overflow-hidden rounded-lg shadow-lg bg-white"
           >
-            <Lottie
-              animationData={work.animation}
-              loop
-              autoplay
-              className="w-full h-64 object-cover pointer-events-none"
-            />
+            <div className="rounded-lg overflow-hidden">
+              <Lottie
+                animationData={work.animation}
+                loop
+                autoplay
+                className="w-full h-64 object-cover pointer-events-none"
+              />
+            </div>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
               <h3 className="text-white text-2xl font-semibold">{work.title}</h3>
             </div>
