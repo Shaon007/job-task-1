@@ -1,32 +1,31 @@
 import { useEffect, useState } from 'react';
-// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 const clientList = [
   {
-    name: 'Jhon Smit',
+    name: 'Luffy',
     text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    img: 'https://randomuser.me/api/portraits/men/32.jpg',
+    img: 'https://i.pinimg.com/736x/c1/6a/e4/c16ae41dcd29ca70be71b8c7a793e104.jpg',
   },
   {
     name: 'Alice Brown',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non natus animi rerum harum, adipisci repellendus enim nesciunt. Et, placeat.',
-    img: 'https://randomuser.me/api/portraits/women/44.jpg',
+    img: 'https://i.pinimg.com/736x/47/30/2d/47302dc5f79fdc44b90b5e479e60a8b7.jpg',
   },
   {
     name: 'Mark Green',
     text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: 'https://randomuser.me/api/portraits/men/45.jpg',
+    img: 'https://i.pinimg.com/736x/6e/0c/34/6e0c349fad66715658ac83b5312ad5da.jpg',
   },
   {
     name: 'Eva Johnson',
     text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat in quam facilisis aliquet.',
-    img: 'https://randomuser.me/api/portraits/women/22.jpg',
+    img: 'https://i.pinimg.com/736x/51/c1/d3/51c1d32cb9c47c57815ce4d0c1e9a8b8.jpg',
   },
   {
     name: 'Tom White',
     text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.',
-    img: 'https://randomuser.me/api/portraits/men/54.jpg',
+    img: 'https://i.pinimg.com/736x/c9/26/54/c92654f51926c675ea63f5ba4460941c.jpg',
   },
 ];
 
@@ -73,7 +72,7 @@ const Testimonial = () => {
           const isActive = i === active;
           const size = isActive ? 'w-28 h-28' : 'w-16 h-16';
           const border = isActive
-            ? 'border-4 border-purple-500'
+            ? 'border-2 border-purple-500 p-2'
             : 'border-2 border-white';
           const zIndex = isActive ? 50 : 10;
 
@@ -94,7 +93,7 @@ const Testimonial = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4 }}
-              className={`rounded-full object-cover absolute ${size} ${border} shadow-md transition-all`}
+              className={`rounded-full  object-cover absolute ${size} ${border} shadow-md transition-all`}
               style = {{
           top: pos.top,
           left: pos.left,

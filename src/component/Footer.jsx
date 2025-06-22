@@ -4,7 +4,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="mt-10 border-t-2 text-base-content px-6 md:px-16 py-12">
+    <footer id="footer" className="mt-10 border-t-2 text-base-content px-6 md:px-16 py-12">
       <div className="grid md:grid-cols-3 gap-10">
         <div>
           <h2 className="text-2xl font-bold mb-4 cursor-pointer" onClick={() => navigate("/")}>nazir.h</h2>
