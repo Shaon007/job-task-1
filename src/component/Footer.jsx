@@ -1,9 +1,18 @@
+import { useState } from "react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
+  const handleSubmit = () => {
+    if (!email) return;
+    toast.success("Thank you, Will contact you soon..")
+    setEmail("");
+  };
 
   return (
+
     <footer id="footer" className="mt-10 border-t-2 text-base-content px-6 md:px-16 py-12">
       <div className="grid md:grid-cols-3 gap-10">
         <div>
@@ -28,9 +37,16 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="input input-bordered w-full rounded-r-none"
             />
-            <button className="btn bg-indigo-400 text-white rounded-l-none">Send</button>
+            <button
+              onClick={handleSubmit}
+              className="btn bg-indigo-400 text-white rounded-l-none hover:scale-105 transition-transform duration-100"
+            >
+              Send
+            </button>
           </div>
         </div>
       </div>

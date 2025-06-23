@@ -12,7 +12,7 @@ const Root = () => {
       <Navbar></Navbar>
       <Outlet />
       <Footer/>
-      <Toaster />
+      <Toaster position="top-right"/>
     </div>
   );
 };

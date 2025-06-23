@@ -24,7 +24,7 @@ const Navbar = () => {
           <li><NavLink to="/">Home</NavLink></li>
           <li><button onClick={() => Scroll("different")}>About Me</button></li>
           <li><NavLink to="/projects">My Works</NavLink></li>
-          <li><NavLink to="/blog">Skills</NavLink></li>
+          <li><NavLink to="/skills">Skills</NavLink></li>
           <li><button onClick={() => Scroll("footer")}>Contact</button></li>
         </ul>
       </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li><NavLink to="/">Home</NavLink></li>
             <li><button onClick={() => Scroll("different")}>About</button></li>
             <li><NavLink to="/projects">My Works</NavLink></li>
-            <li><NavLink to="/blog">Skills</NavLink></li>
+            <li><NavLink to="/skills">Skills</NavLink></li>
             <li><button onClick={() => Scroll("footer")}>Contact</button></li>
           </ul>
         </div>
