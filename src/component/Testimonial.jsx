@@ -67,7 +67,7 @@ const Testimonial = () => {
   const sides = ['right', 'top', 'left'];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-10 bg-white">
+    <div className="w-11/12 flex flex-col items-center justify-center py-10 bg-white overflow-hidden object-contain">
       <h4 className="text-center text-sm font-semibold">Testimonials</h4>
       <h2 className="text-3xl font-bold mb-8">Clients Feedback</h2>
 

@@ -5,7 +5,7 @@ import spacial from '../assets/special.json';
 
 const Different = () => {
   return (
-    <div id="different" className="px-4 md:px-10 lg:px-16 py-12 lg:py-20 bg-base-100">
+    <div id="different" className="px-4 md:px-10 lg:px-16 pb-10 lg:py-10 bg-base-100">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 lg:mb-24">
         What Makes Me Special
       </h2>
@@ -13,7 +13,7 @@ const Different = () => {
       <div className="flex flex-col lg:flex-row items-center gap-12">
         <div className="w-full lg:w-1/2 space-y-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 border-b-2 border-l-4 rounded-lg">
-            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl">
+            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl hidden md:flex">
               <FaLightbulb className="w-10 h-10" />
             </div>
             <div>
@@ -25,7 +25,7 @@ const Different = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 border-b-2 border-l-4 rounded-lg">
-            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl">
+            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl hidden md:flex">
               <FaTag className="w-10 h-10" />
             </div>
             <div>
@@ -37,7 +37,7 @@ const Different = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6 border-b-2 border-l-4 rounded-lg">
-            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl">
+            <div className="bg-indigo-400 text-white p-3 rounded-md text-2xl hidden md:flex">
               <FaGrav className="w-10 h-10" />
             </div>
             <div>
@@ -49,9 +49,9 @@ const Different = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-center relative mt-10 lg:mt-0">
+        <div className="w-full lg:w-1/2 flex justify-center relative mt-10 lg:mt-0 md:hidden lg:flex">
           <div className="absolute top-6 right-1 w-[260px] h-[260px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] bg-indigo-100 rounded-xl shadow-lg z-0"></div>
-          <div className="relative top-10 md:top-12 lg:top-16 left-8 md:left-10 lg:left-16 z-10 bg-white rounded-xl shadow-2xl p-2 md:p-4">
+          <div className="relative top-16  lg:top-16 lg:left-16 z-10 bg-white rounded-xl shadow-2xl p-2 md:p-4">
             <Lottie
               animationData={spacial}
               loop

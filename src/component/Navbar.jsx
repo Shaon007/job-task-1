@@ -13,16 +13,16 @@ const Navbar = () => {
   };
 
   return (
-    <div id='nav' className="navbar bg-base-100">
+    <div id='nav' className="navbar bg-sky-50 sticky top-0 bg-opacity-90 z-50 pl-6 lg:pl-20">
       <div className="navbar-start">
-        <NavLink to="/" className=" text-2xl">nazir.h</NavLink>
+        <NavLink to="/" className="text-xl md:text-2xl">nazir.h</NavLink>
       </div>
 
       {/* routes */}
       <div className="navbar-end hidden lg:flex lg:pr-20">
         <ul className="menu menu-horizontal px-1 flex gap-5 text-lg ">
           <li><NavLink to="/">Home</NavLink></li>
-          <li><button onClick={() => Scroll("different")}>About Me</button></li>
+          <li><NavLink to="/about">About Me</NavLink></li>
           <li><NavLink to="/projects">My Works</NavLink></li>
           <li><NavLink to="/skills">Skills</NavLink></li>
           <li><button onClick={() => Scroll("footer")}>Contact</button></li>
@@ -48,7 +48,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li><NavLink to="/">Home</NavLink></li>
-            <li><button onClick={() => Scroll("different")}>About</button></li>
+            <li><NavLink to="/about">About Me</NavLink></li>
             <li><NavLink to="/projects">My Works</NavLink></li>
             <li><NavLink to="/skills">Skills</NavLink></li>
             <li><button onClick={() => Scroll("footer")}>Contact</button></li>
