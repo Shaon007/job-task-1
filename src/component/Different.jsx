@@ -1,5 +1,5 @@
-import { FaCode, FaPaintBrush, FaGraduationCap, FaLightbulb, FaTag,  } from "react-icons/fa";
-import { FaGrav, FaTags } from "react-icons/fa6";
+import { FaLightbulb, FaTag,  } from "react-icons/fa";
+import { FaGrav } from "react-icons/fa6";
 import Lottie from 'lottie-react';
 import spacial from '../assets/special.json';
 

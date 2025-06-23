@@ -34,14 +34,18 @@ const Testimonial = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      let next;
-      do {
-        next = Math.floor(Math.random() * clientList.length);
-      } while (next === active);
-      setactive(next);
+      setactive(prev => {
+        let next;
+        do {
+          next = Math.floor(Math.random() * clientList.length);
+        } while (next === prev);
+        return next;
+      });
     }, 4000);
+
     return () => clearInterval(interval);
-  }, [active]);
+  }, []);
+
 
   const getSidePosition = (index, total, side) => {
     const step = 100 / (Math.ceil(total / 4) + 1);
@@ -64,7 +68,7 @@ const Testimonial = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center py-10 bg-white">
-      <h4 className="text-center text-sm font-semibold">TESTIMONIALS</h4>
+      <h4 className="text-center text-sm font-semibold">Testimonials</h4>
       <h2 className="text-3xl font-bold mb-8">Clients Feedback</h2>
 
       <div className="relative w-full max-w-6xl h-[350px] mb-10 rounded-md">

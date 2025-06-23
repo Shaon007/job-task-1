@@ -1,20 +1,15 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+
   const navigate = useNavigate();
-  const location = useLocation();
 
   const Scroll = (id) => {
-    if (location.pathname === "/") {
+    navigate("/");
+    setTimeout(() => {
       const section = document.getElementById(id);
       section?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate("/");
-      setTimeout(() => {
-        const section = document.getElementById(id);
-        section?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
+    }, 100);
   };
 
   return (
@@ -63,5 +58,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
