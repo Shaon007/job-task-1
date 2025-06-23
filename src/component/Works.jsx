@@ -34,7 +34,7 @@ const works = [
 
 const Works = () => {
   return (
-    <div className="py-20 px-6 md:px-16 bg-base-100">
+    <div className="md:py-20 px-6 md:px-16 bg-base-100">
       <h2 className="text-5xl font-bold text-center mb-12">What I Do</h2>
 
       <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-3">
@@ -57,23 +57,23 @@ const Works = () => {
               />
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-semibold">{work.title}</h3>
+              <h3 className="text-white text-2xl font-semibold ">{work.title}</h3>
             </div>
           </motion.div>
         ))}
       </div>
-      <div className="flex justify-around my-20 text-center">
+      <div className="flex flex-col md:flex-row gap-6 justify-around my-20 text-center">
         <div>
-          <h2 className="text-6xl font-semibold">30+</h2>
-          <p className="text-2xl">Project Done</p>
+          <h2 className="text-3xl lg:text-6xl font-semibold">30+</h2>
+          <p className="text-xl lg:text-2xl">Project Done</p>
         </div>
         <div>
-          <h2 className="text-6xl font-semibold">200 Hrs+</h2>
-          <p className="text-2xl">Course Work</p>
+          <h2 className="text-3xl lg:text-6xl font-semibold">200 Hrs+</h2>
+          <p className="text-xl lg:text-2xl">Course Work</p>
         </div>
         <div>
-          <h2 className="text-6xl font-semibold">20+</h2>
-          <p className="text-2xl">Tools Mastered</p>
+          <h2 className="text-3xl lg:text-6xl font-semibold">20+</h2>
+          <p className="text-xl lg:text-2xl">Tools Mastered</p>
         </div>
       </div>
     </div>
