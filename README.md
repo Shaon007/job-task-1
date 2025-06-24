@@ -19,6 +19,3 @@ This project showcases my skills, projects, and experience as a **Full Stack Web
 - **Deployment:** Surge / Vercel / Firebase
 - **Icons & Animations:** React Icons, Lottie Files
 
----
-
-## 📁 Folder Structure
