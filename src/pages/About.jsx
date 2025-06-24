@@ -1,5 +1,6 @@
 import Lottie from 'lottie-react';
 import education from '../assets/education.json';
+import { Helmet } from 'react-helmet';
 const About = () => {
 
   const certificates = [
@@ -44,6 +45,10 @@ const About = () => {
 
   return (
     <div className="px-6 lg:px-16 py-12 space-y-16">
+      <Helmet>
+        <title>About | Nazir</title>
+        <meta name="description" content="Nazir Hossain's personal portfolio homepage." />
+      </Helmet>
       <div className="flex flex-col md:flex-row items-center gap-10 bg-purple-50 p-6 rounded-xl shadow-md">
         <div className="md:w-1/2 w-full">
           <Lottie animationData={education} loop autoplay />

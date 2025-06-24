@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const Error = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <Helmet>
+        <title>Error | Nazir</title>
+        <meta name="description" content="Nazir Hossain's personal portfolio homepage." />
+      </Helmet>
       <img
         src='https://i.pinimg.com/736x/63/d4/1a/63d41af9e37556966bd00f933925e2ca.jpg'
         alt="404 Not Found"

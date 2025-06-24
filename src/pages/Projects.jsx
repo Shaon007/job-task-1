@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 const projectData = [
   {
     name: "Equi-Sports",
@@ -26,7 +28,7 @@ const projectData = [
   {
     name: "thinkBolt",
     description: "A blog website with crud operation",
-    live: "https://nextjs-blog-client-nine.vercel.app/",
+    live: "https://think-bolt20.vercel.app/",
     tech: ["Next.js", "Firebase", "Tailwind", "Nodejs", "MongoDB"],
   },
   {
@@ -38,9 +40,15 @@ const projectData = [
 
 ];
 
+
 const Projects = () => {
   return (
+
     <div className="py-20 px-6 md:px-16 bg-base-100">
+      <Helmet>
+        <title>Projects | Nazir</title>
+        <meta name="description" content="Nazir Hossain's personal portfolio homepage." />
+      </Helmet>
       <h2 className="text-5xl font-bold text-center mb-16">My Projects</h2>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
@@ -59,7 +67,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="inline-block mt-auto text-indigo-600 font-medium hover:underline"
             >
-              Visit Live 
+              Visit Live
             </a>
           </div>
         ))}

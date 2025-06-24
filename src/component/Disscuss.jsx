@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Disscuss = () => {
   const Scroll = () => {
-      const section = document.getElementById("nav");
+      const section = document.getElementById("hero");
       section?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
