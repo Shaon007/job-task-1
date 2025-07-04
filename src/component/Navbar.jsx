@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 flex gap-5 text-lg ">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About Me</NavLink></li>
-          <li><NavLink to="/projects">My Works</NavLink></li>
+          <li><NavLink to="/projects">Projects</NavLink></li>
           <li><NavLink to="/skills">Skills</NavLink></li>
           <li><button onClick={() => Scroll("footer")}>Contact</button></li>
         </ul>

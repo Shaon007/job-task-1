@@ -1,5 +1,6 @@
 import Lottie from 'lottie-react';
 import animationData from '../assets/hero.json';
+import { FaGithub } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -15,13 +16,22 @@ const Hero = () => {
         <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
           I'm a full-stack web developer passionate about building impactful digital experiences.
         </p>
-        <a
-          href="/nazirCV.pdf"
-          download
-          className="btn bg-indigo-400 hover:scale-95 transition-transform duration-300 text-white w-fit underline mx-auto lg:mx-0"
-        >
-          Download CV
-        </a>
+        <div className='flex gap-4'>
+          <a
+            href="/nazir_cv.pdf"
+            download
+            className="btn bg-indigo-400 hover:scale-95 transition-transform duration-300 text-white w-fit underline mx-auto lg:mx-0"
+          >
+            Download CV
+          </a>
+          <a
+            href="https://github.com/Shaon007"
+            target="_blank"
+            className="btn bg-indigo-400 hover:scale-95 transition-transform duration-300 text-white w-fit underline mx-auto lg:mx-0"
+          >
+            Github <FaGithub/>
+          </a>
+        </div>
       </div>
       <div className="w-full lg:w-4/5 mt-12 lg:mt-0 flex justify-center">
         <Lottie
